@@ -1,13 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
+// route
 import { HashRouter } from "react-router-dom";
+// redux
+import { Provider } from "react-redux";
+import store from "./store";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
+  <Provider store={store}>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </Provider>,
   document.getElementById("root")
 );
 

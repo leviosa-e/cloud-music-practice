@@ -4,6 +4,7 @@ import { routeConfigs } from "./routes/index";
 // redux
 import { Provider } from "react-redux";
 import store from "./store";
+import { Data } from "./application/Singers/data";
 // style
 import { GlobalStyle } from "./style";
 import { IconStyle } from "./assets/iconfont/iconfont";
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <IconStyle />
-      {routes}
+      <Data>{routes}</Data>
     </div>
   );
 }
