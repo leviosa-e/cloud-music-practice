@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const baseUrl = "http://127.0.0.1:4000";
+export const baseUrl = "https://service-karrhl8r-1321640331.sh.apigw.tencentcs.com/release/";
 
 // axios 的实例及拦截器配置
 const axiosInstance = axios.create({
